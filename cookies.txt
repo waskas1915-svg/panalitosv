@@ -1,0 +1,10 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+panalitosv.com	TRUE	/	FALSE	1999999999	_shopify_analytics	:AZ0dI8W6AAEA6He8Hv9MmyEPSaBvKCpayIWbDvbTAQ4WUCLSSGU1b3immWTA-4mzjEfPFxM:
+panalitosv.com	TRUE	/	FALSE	1999999999	_shopify_essential	:AZ0dI8ReAAH_zUfaKGJomVe6k0QiqL527si3qJ3bhal-SjqLliwteQo2Gpea4J8ldIq2_CGBorJ7vTYG1625eUJf9Y4hY0CPfijWu-CW7KH4zeyzgPln5yDpn6qebLgJ-K8Qtqfd5SCugY46XayVm10wv5gWCPOXlvxfxm6bNXC1qhCZHOgkOpn6mNVAJTJIfafwy1V7q0KQsEsTEyqU4yuIE7gm6H3HPvAYfibus0OLFsUZTOhVtOuBfWu6ceyMunOsRvdwhx4Gq7jlAYeRH6P-36YGpgP3_ODTH5RCtvIrErLb8J-zQaqFeJrMtmWSWsoTPphuCXOYvNMxn7o2W5OoJDHksQsx6jXq_alIXuvC1JtE58rkg_FXbFlCdV6UEDkl-NmmkpuvhClLBMXDFg:
+panalitosv.com	TRUE	/	FALSE	1999999999	Priority	High
+panalitosv.com	TRUE	/	FALSE	1999999999	_shopify_y	b572b99c-2663-4582-8ac9-cc3e4068c401
+panalitosv.com	TRUE	/	FALSE	1999999999	_shopify_s	88e8a867-1b11-4a1a-82a1-49a145295eaf
+panalitosv.com	TRUE	/	FALSE	1999999999	localization	SV
+panalitosv.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

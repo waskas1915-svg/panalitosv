@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 23 Mar 2026 17:59:31 at https://panalitosv.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://panalitosv.com/ -O1 "D:\Archive\Panalitosv-site\panalitosv" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:00:47	Error: 	"Not Found" (404) at link https://panalitosv.com/POST (from https://panalitosv.com/)
+18:00:47	Error: 	"Error when decompressing" (-1) at link https://panalitosv.com/cdn (from https://panalitosv.com/)
+18:00:59	Error: 	"Error when decompressing" (-1) at link https://panalitosv.com/account (from https://panalitosv.com/)
+18:00:59	Error: 	"Not Found" (404) at link https://panalitosv.com/window.location.href (from https://panalitosv.com/)
+18:01:13	Error: 	"Not Found" (404) at link https://panalitosv.com/collections/POST (from https://panalitosv.com/collections/all)
+18:01:13	Error: 	"Not Found" (404) at link https://panalitosv.com/collections/window.location.href (from https://panalitosv.com/collections/all)
+18:01:15	Error: 	"Not Found" (404) at link https://panalitosv.com/pages/POST (from https://panalitosv.com/pages/contact)
+18:01:15	Error: 	"Not Found" (404) at link https://panalitosv.com/pages/window.location.href (from https://panalitosv.com/pages/contact)
+18:01:20	Error: 	"Not Found" (404) at link https://panalitosv.com/policies/POST (from https://panalitosv.com/policies/privacy-policy)
+18:01:20	Error: 	"Not Found" (404) at link https://panalitosv.com/policies/window.location.href (from https://panalitosv.com/policies/privacy-policy)
+18:01:20	Error: 	"Service Unavailable" (503) at link https://panalitosv.com/products/POST (from https://panalitosv.com/products/miel-de-panal)
+18:01:20	Error: 	"Not Found" (404) at link https://panalitosv.com/products/window.location.href (from https://panalitosv.com/products/miel-de-panal)
+18:01:20	Error: 	"Service Unavailable" (503) at link https://panalitosv.com/collections/frontpage.atom (from https://panalitosv.com/collections/frontpage)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 49 seconds : 135 links scanned, 121 files written (6149528 bytes overall) [4522205 bytes received at 41488 bytes/sec], 3812481 bytes transferred using HTTP compression in 112 files, ratio 22%, 36.2 requests per connection
+(13 errors, 0 warnings, 0 messages)
