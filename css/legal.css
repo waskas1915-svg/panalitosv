@@ -1,0 +1,86 @@
+/* ==========================================
+   ESTILOS LEGALES (Estética Miel Panalito)
+   ========================================== */
+
+/* Limpieza general para evitar scrolls no deseados */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #F5F0E6; /* Beige claro base de tu landing */
+}
+
+/* El root ahora tiene el mismo fondo que tu sección de cierre */
+#legal-content-root {
+    padding: 80px 20px;
+    background-color: #F5F0E6; 
+    min-height: 80vh;
+}
+
+/* La tarjeta que sostiene el texto */
+.legal-wrapper {
+    max-width: 850px;
+    margin: 0 auto 80px;
+    background-color: #FFFFFF; /* Blanco limpio para contraste sobre el fondo beige */
+    color: #4A3F35;            /* El mismo color de texto de tu landing */
+    line-height: 1.8;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(74, 63, 53, 0.08); /* Sombra suave, no agresiva */
+    padding: 60px;
+}
+
+/* Header interno: SIN banner oscuro */
+.legal-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.legal-header h1 {
+    color: #4A3F35;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.last-update {
+    display: block;
+    color: #C69C6D; /* Tono miel dorado para resaltar suavemente */
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Títulos de secciones: Estilo más minimalista */
+h2 {
+    color: #C69C6D; /* Dorado Miel */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E6D3B8; /* Línea sutil en lugar de barra lateral */
+    padding-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* Listas con estilo limpio */
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Resaltado de texto */
+strong {
+    color: #2D251F; /* Un poco más oscuro que el texto base para destacar */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .legal-wrapper {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,148 @@
+/* ==========================================
+   INFRAESTRUCTURA UNIFICADA (drawer.css)
+   ========================================== */
+
+#drawerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Un poco más suave */
+    z-index: 10500;
+    display: none;
+    backdrop-filter: blur(2px); /* Efecto cristal elegante */
+}
+
+#drawerOverlay.show {
+    display: block;
+}
+
+#unifiedDrawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 420px;
+    max-width: 95%;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 11000;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.05);
+}
+
+#unifiedDrawer.show {
+    transform: translateX(0);
+}
+
+/* Cabecera simplificada (Sin tabs) */
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.drawer-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--bg-dark);
+    margin: 0;
+}
+
+.close-x {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-x:hover {
+    color: var(--gold);
+}
+
+/* Contenedor dinámico */
+.drawer-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Estilo para los ítems del carrito dentro del drawer */
+.cart-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--bg-light);
+}
+
+.cart-name { font-weight: 600; margin: 0; }
+.cart-size { font-size: 0.8rem; color: var(--text-muted); }
+.cart-price { font-weight: 700; color: var(--bg-dark); margin: 5px 0; }
+
+/* Botones de cantidad */
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qty-btn {
+    background: #f0f0f0;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 0.75rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer del carrito */
+.cart-footer {
+    padding: 25px;
+    background: #fafafa;
+    border-top: 1px solid #eee;
+}
+
+
+.black-btn {
+    width: 100%;
+    background: var(--bg-dark);
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.black-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

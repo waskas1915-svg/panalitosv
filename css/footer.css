@@ -1,0 +1,44 @@
+/* Nuevo estilo Kraft para tu footer */
+.main-footer {
+    background-image: url('https://www.transparenttextures.com/patterns/kraftpaper.png');
+    background-color: #dccbb5; /* Tono papel kraft */
+    color: #3d342d;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-brand-text p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-content > p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    border-top: 1px solid rgba(61, 52, 45, 0.2);
+    padding-top: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.footer-links a {
+    color: #3d342d; /* Color oscuro para legibilidad en kraft */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #E6B325; /* El dorado aparece al pasar el mouse */
+}

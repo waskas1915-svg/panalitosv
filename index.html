@@ -1,120 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panalitosv</title>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Panalito SV | Miel natural</title>
+      <link rel="stylesheet" href="css/animation.css">
+      <link rel="stylesheet" href="css/cart.css">
+      <link rel="stylesheet" href="css/checkout.css">
+      <link rel="stylesheet" href="css/toast.css">
+      <link rel="stylesheet" href="css/landingpage.css">
+      <link rel="stylesheet" href="css/header+cart.css">
+      <link rel="stylesheet" href="css/drawer.css">
+      <link rel="stylesheet" href="css/checkout.css">
+      <link rel="stylesheet" href="css/product_detail.css">
+      <link rel="stylesheet" href="css/product_grid.css">
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="css/legal.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
 
-    header {
-      background: white;
-      padding: 15px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+    <header></header>
 
-    header img {
-      height: 60px;
-    }
+    <!-- side-drawer -->
+    <div id="drawerOverlay" class="overlay"></div>
+    <div id="unifiedDrawer" class="side-drawer">
+        <div class="drawer-header">
+            <div class="drawer-tabs">
+                <span class="tab-btn" data-tab="cart">Bag(<span id="bag-count">0</span>)</span>
+            </div>
+            <button id="closeDrawerBtn" class="close-x">×</button>
+        </div>
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: url('./images/hero.jpg') center/cover no-repeat;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .product {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .product img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <img src="./images/logo.png" alt="Logo">
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Contacto</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Bienvenido a Panalitosv</h1>
-  <p>Saborea el momento, deja que la dulzura transforme tus días.</p>
-</section>
-
-<section class="section">
-  <h2>Nuestros Productos</h2>
-
-  <div class="products">
-    <div class="product">
-      <img src="./images/product1.jpg" alt="">
-      <h3>Miel Natural</h3>
-      <p>Pura, orgánica y deliciosa.</p>
+        <div id="drawerContent" class="drawer-content"></div>
     </div>
 
-    <div class="product">
-      <img src="./images/product2.jpg" alt="">
-      <h3>Miel Premium</h3>
-      <p>Calidad superior para tu salud.</p>
-    </div>
-  </div>
-</section>
+    <!-- Main Content -->
+    <main>
+      <div id="products"></div>
+    </main>
 
-<footer>
-  <p>© 2026 Panalitosv - Todos los derechos reservados</p>
-</footer>
+    <!-- toast container -->
+    <div id="toastContainer"></div>
 
-</body>
+    <div id="redemptionModalContainer"></div>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module">
+        import { initHeader } from './js/header.js';
+        initHeader();
+        import { initFooter } from './js/footer.js';
+        window.addEventListener('DOMContentLoaded', () => {
+            initFooter();
+        });
+    </script>
+  </body>
+
 </html>

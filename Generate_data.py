@@ -1,0 +1,29 @@
+import json
+
+products = [
+    # Productos
+        #Miel de abeja
+
+                {
+                "id": 111750,
+                "name": "Miel de abeja",
+                "size": "750ML",
+                "price": 7,
+                "image": "../images/miel750.png",
+                "description": "El hogar y la familia. Perfecta para tener en la alacena, endulzar tus bebidas diarias, preparar postres o disfrutarla en desayunos abundantes."
+            },
+            {
+                "id": 111370,
+                "name": "Miel de abeja",
+                "size": "370ML",
+                "price": 3.5,
+                "image": "../images/miel750.png",
+                "description": "Práctica y versátil. El tamaño justo para llevar a donde sea, regalar a alguien especial o probar nuestra cosecha por primera vez."
+            } 
+
+]
+
+with open("products.json", "w") as file:
+    json.dump(products, file, indent=2)
+
+print("products.json created!")

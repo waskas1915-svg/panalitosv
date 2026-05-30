@@ -1,0 +1,106 @@
+/* ==========================================
+   TIENDA / GRID DE PRODUCTOS (Actualizado)
+   ========================================== */
+
+#products {
+    width: 100%;
+    padding: 0 !important; /* Forces the container to ignore its own padding */
+    margin: 0;
+}
+
+#productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 20px; /* Bordes más suaves */
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.product-img-container {
+    width: 100%;
+    background-color: #FDFDFD;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: contain; /* Mejor para botellas de miel */
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    color: var(--text-dark);
+    font-size: 1.3rem;
+    margin: 10px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.card-bottom {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botón estilo Dorado Miel */
+.product-card .primary-btn {
+    background-color: var(--gold);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 50px; /* Botón redondeado */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-card .primary-btn:hover {
+    background-color: var(--gold-hover);
+}
+
+.in-stock {
+    color: var(--bg-dark); /* Verde Bosque */
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bg-dark); /* Verde Bosque */
+    margin: 10px 0 !important;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    cursor: pointer;
+}
